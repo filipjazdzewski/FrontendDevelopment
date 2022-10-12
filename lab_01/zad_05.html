@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="zad_05.css">
+</head>
+<body>
+    <form>
+        <label for="Title">Title<sup style="color: red">*</sup></label>
+        <br>
+        <input type="text" id="Title">
+        <br><br>
+        <label for="Date">Date</label>
+        <br>
+        <input type="date" class="Date">
+        <p class="description">Date-only description</p>
+
+        <div>
+            <h5 style="margin: 0">DATE/TIME</h5>
+            <br>
+            <input type="date" class="Date">
+            <input type="time" step="1">
+            <p class="description">Date and time description.</p>
+        </div>
+        <div>
+            <h5 class="marg-top">DATE RANGE</h5>
+            <div>
+                <h5 class="marg-top">START DATE</h5>
+                <input type="date">
+                <input type="time" step="1">
+            </div>
+            <div>
+                <h5 class="marg-top">END DATE</h5>
+                <input type="date">
+                <input type="time" step="1">
+            </div>
+            <p class="description">Date range description.</p>
+        </div>
+        <div>
+            <h5 class="marg-top">DATE/TIME LIST</h5>
+            <select name="Year" id="Year">
+                <option value="Year">Year</option>
+            </select>
+            <select name="Month" id="Month">
+                <option value="Month">Month</option>
+            </select>
+            <select name="Day" id="Day">
+                <option value="Day">Day</option>
+            </select>
+            <select name="Hour" id="Hour">
+                <option value="Hour">Hour</option>
+            </select>
+            <select name="Minute" id="Minute">
+                <option value="Minute">Minute</option>
+            </select>
+            <p class="description">Date / time list description.</p>
+        </div>
+    </form>
+</body>
+</html>

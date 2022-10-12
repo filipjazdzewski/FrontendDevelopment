@@ -1,0 +1,15 @@
+header * {
+    text-align: center;
+    margin: 0;
+}
+ header {
+    margin-bottom: 1rem;
+ }
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 1rem;
+}
