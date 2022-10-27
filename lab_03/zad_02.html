@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- React library & ReactDOM (Development Version)-->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+      const data = {
+        image: 'https://i.ytimg.com/vi/kHjzuqq3b44/maxresdefault.jpg',
+        cardTitle: 'Bob Dylan',
+        cardDescription:
+          'Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer/songwriter, author, and artist who has been an influential figure in popular music and culture for more than five decades.',
+        button: {
+          url: 'https://en.wikipedia.org/wiki/Bob_Dylan',
+          label: 'Go to wikipedia',
+        },
+      };
+
+      // <div class="card m-5">
+      //   <img class="card-img-top" src="..." alt="Card image cap" />
+      //   <div class="card-body">
+      //     <h5 class="card-title">Card title</h5>
+      //     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+      //     <a href="#" class="btn btn-primary">Go somewhere</a>
+      //   </div>
+      // </div>
+
+      const container = React.createElement('div', { className: 'card m-5' }, [
+        React.createElement(
+          'img',
+          {
+            key: 'img',
+            className: 'card-img-top',
+            src: data.image,
+            alt: 'Card image cap',
+          },
+          null
+        ),
+        React.createElement(
+          'div',
+          { key: 'cardBody', className: 'card-body' },
+          [
+            React.createElement(
+              'h5',
+              { key: 'cardTitle', className: 'card-title' },
+              data.cardTitle
+            ),
+            React.createElement(
+              'p',
+              { key: 'cardDesc', className: 'card-text' },
+              data.cardDescription
+            ),
+            React.createElement(
+              'a',
+              {
+                key: 'cardButton',
+                href: data.button.url,
+                className: 'btn bztn-primary',
+              },
+              data.button.label
+            ),
+          ]
+        ),
+      ]);
+
+      ReactDOM.render(container, document.getElementById('root'));
+    </script>
+  </body>
+</html>
