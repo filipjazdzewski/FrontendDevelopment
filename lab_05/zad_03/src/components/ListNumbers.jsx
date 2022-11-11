@@ -1,9 +1,13 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ListItem from './ListItem';
 
 function ListNumbers() {
   const [numbers, setNumbers] = useState([]);
+
+  useEffect(() => {
+    generateNumbers(10);
+  }, []);
 
   const generateNumbers = (length) => {
     setNumbers(
