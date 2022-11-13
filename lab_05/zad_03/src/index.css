@@ -11,6 +11,7 @@ body {
   background-color: #202142;
   color: #fff;
   line-height: 1.6;
+  height: 100vh;
 }
 
 ul {
@@ -54,4 +55,5 @@ li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
+  grid-gap: 10px;
 }
