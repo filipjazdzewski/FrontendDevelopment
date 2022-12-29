@@ -20,7 +20,7 @@ body .container {
 
 body .container input[type='text'],
 body .container input[type='email'],
-body .container input[type='password'] {
+body .container textarea {
   width: 90%;
   display: block;
   margin-left: auto;
@@ -32,6 +32,11 @@ body .container input[type='password'] {
   padding: 10px 10px;
   border-radius: 5px;
   color: #ccc;
+}
+
+body .container textarea {
+  max-height: 140px;
+  resize: vertical;
 }
 
 body .container input:focus {
@@ -60,31 +65,15 @@ body .container button:hover {
   opacity: 0.9;
 }
 
-body .container table {
-  border: 2px solid #3d4245;
-  width: 100%;
-  margin-top: 20px;
+body .container ul {
+  list-style: square;
 }
 
-body .container table td {
-  border: 1px solid #3d4245;
+body .container ul li {
   padding: 5px;
 }
 
 body .container h2 {
-  text-align: center;
-}
-
-body .container .gender-choice {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body .container .checkbox {
   text-align: center;
 }
 
