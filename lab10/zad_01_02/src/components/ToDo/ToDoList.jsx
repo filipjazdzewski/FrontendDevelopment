@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import ToDoItem from './ToDoItem';
-import { delete_toDo, finish_toDo } from '../../features/toDoSlice';
+import { delete_toDo, finish_toDo } from '../../features/ToDoSlice';
 
 export default function ToDoList() {
   const toDos = useSelector((state) => state.toDo.toDos);

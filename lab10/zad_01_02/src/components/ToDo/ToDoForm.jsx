@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
-import { add_toDo } from '../../features/toDoSlice';
+import { add_toDo } from '../../features/ToDoSlice';
 
 function ToDoForm() {
   const [formData, setFormData] = useState({

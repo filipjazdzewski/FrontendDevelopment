@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { update_toDo } from '../features/toDoSlice';
+import { update_toDo } from '../features/ToDoSlice';
 import { FaArrowAltCircleLeft } from 'react-icons/fa';
 
 function ToDoDetails() {
