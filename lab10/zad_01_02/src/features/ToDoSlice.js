@@ -22,7 +22,7 @@ export const toDoSlice = createSlice({
         x.id === action.payload.id
           ? {
               ...x,
-              name: action.payload.update.name,
+              title: action.payload.update.title,
               date: action.payload.update.date,
             }
           : x

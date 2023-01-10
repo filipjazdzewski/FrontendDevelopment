@@ -45,12 +45,10 @@ function ToDoDetails() {
       </section>
 
       <section className='todo'>
-        <div className='rounded border border-primary p-3'>
-          <div>id: {toDo.id}</div>
-          <div>title: {toDo.title}</div>
-          <div>date: {toDo.date}</div>
-          <div>done: {toDo.done ? 'true' : 'false'}</div>
-        </div>
+        <div>id: {toDo.id}</div>
+        <div>title: {toDo.title}</div>
+        <div>date: {toDo.date}</div>
+        <div>done: {toDo.done ? 'true' : 'false'}</div>
       </section>
 
       <section className='form'>

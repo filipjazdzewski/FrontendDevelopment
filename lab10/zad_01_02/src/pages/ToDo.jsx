@@ -1,9 +1,7 @@
-import ToDoForm from '../components/ToDo/ToDoForm';
-import ToDoList from '../components/ToDo/ToDoList';
+import ToDoForm from '../components/todo/ToDoForm';
+import ToDoList from '../components/todo/ToDoList';
 import { Link } from 'react-router-dom';
 import { FaHome } from 'react-icons/fa';
-
-import React from 'react';
 
 function ToDo() {
   return (

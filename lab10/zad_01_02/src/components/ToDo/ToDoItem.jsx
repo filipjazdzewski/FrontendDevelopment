@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 function ToDoItem({ title, date, id, done, del, check }) {
