@@ -45,7 +45,7 @@ export const directorsSlice = createSlice({
       );
     },
     UPDATE_DIRECTOR: (state, action) => {
-      state.directors = state.directors.map((director) => {
+      state.directors = state.directors.map((director) =>
         director.id === action.payload.id
           ? {
               ...director,
@@ -53,8 +53,8 @@ export const directorsSlice = createSlice({
               lastName: action.payload.update.lastName,
               birthDate: action.payload.update.birthDate,
             }
-          : director;
-      });
+          : director
+      );
     },
   },
 });
