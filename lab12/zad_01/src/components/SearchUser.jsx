@@ -129,7 +129,7 @@ function SearchUser() {
 
       {msg && <h1>{msg}</h1>}
 
-      <UsersList users={displayedUsers} />
+      <UsersList users={displayedUsers} del={false} />
     </>
   );
 }

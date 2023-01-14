@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { DELETE_USER } from '../features/UserSlice';
 import UserCard from '../components/UserCard';
 
-function UsersList({ users }) {
+function UsersList({ users, del }) {
   const dispatch = useDispatch();
 
   function deleteMovie(id) {
@@ -19,7 +19,7 @@ function UsersList({ users }) {
             id={user.id}
             login={user.login}
             email={user.email}
-            handleDelete={() => deleteMovie(user.id)}
+            handleDelete={del && (() => deleteMovie(user.id))}
           />
         ))
         .reverse()}

@@ -18,7 +18,7 @@ function Users() {
       <section>
         <h1>List of Users:</h1>
         <div>
-          <UsersList users={users} />
+          <UsersList users={users} del={true} />
         </div>
       </section>
     </div>
