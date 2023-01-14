@@ -10,21 +10,27 @@ const exampleUserList = [
   },
   {
     id: uuidv4(),
-    login: 'user2',
-    email: 'user2@wp.pl',
+    login: 'Filippo',
+    email: 'filip123@wp.pl',
     password: 'usertwo',
   },
   {
     id: uuidv4(),
     login: 'user3',
-    email: 'user3@gmail.com',
+    email: 'userThree@gmail.com',
     password: '3user3',
   },
   {
     id: uuidv4(),
-    login: 'user4',
-    email: 'user4@gmail.com',
+    login: 'Gerald',
+    email: 'riviaGentelman@gmail.com',
     password: 'fourfourfour',
+  },
+  {
+    id: uuidv4(),
+    login: 'fill',
+    email: 'fiasko@wp.pl',
+    password: 'usertwo',
   },
 ];
 

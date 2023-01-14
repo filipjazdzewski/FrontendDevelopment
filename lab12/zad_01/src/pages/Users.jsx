@@ -1,17 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import { DELETE_USER } from '../features/UserSlice';
-import UserCard from '../components/UserCard';
+import { useSelector } from 'react-redux';
+import UsersList from '../components/UsersList';
 
 function Users() {
   const users = useSelector((state) => state.users.users);
-
-  const dispatch = useDispatch();
-
-  function deleteMovie(id) {
-    dispatch(DELETE_USER(id));
-  }
 
   return (
     <div>
@@ -25,17 +18,7 @@ function Users() {
       <section>
         <h1>List of Users:</h1>
         <div>
-          {users
-            .map((user) => (
-              <UserCard
-                key={user.id}
-                id={user.id}
-                login={user.login}
-                email={user.email}
-                handleDelete={() => deleteMovie(user.id)}
-              />
-            ))
-            .reverse()}
+          <UsersList users={users} />
         </div>
       </section>
     </div>
