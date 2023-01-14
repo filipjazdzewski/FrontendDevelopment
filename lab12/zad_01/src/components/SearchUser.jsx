@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { FaSistrix } from 'react-icons/fa';
 import UsersList from './UsersList';
 
 function SearchUser() {
   const users = useSelector((state) => state.users.users);
-  const [sortBy, setSortBy] = React.useState('');
-  const [displayedUsers, setDisplayedUsers] = React.useState(users);
-  const [search, setSearch] = React.useState('');
-  const [msg, setMsg] = React.useState('');
+  const [sortBy, setSortBy] = useState('');
+  const [displayedUsers, setDisplayedUsers] = useState(users);
+  const [search, setSearch] = useState('');
+  const [msg, setMsg] = useState('');
 
   function handleSortUsers(e) {
     setSortBy(e.target.value);
